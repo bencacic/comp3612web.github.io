@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Student Plans</title>
+    <style>
+
+        header {
+            text-align: center;
+            padding: 5px;
+            width: 910px;
+            font-size: 36px;
+            font-weight: 600;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            box-shadow: 2px 2px rgb(204, 204, 204);
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .first {
+            background-color: #5BB189;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .second {
+            background-color: #4B0082;
+            padding-right: 5px;
+            padding-left:5px;
+        }
+
+        .third {
+            background-color: #EC632A;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        span.price {
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        span.list {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        p {
+            height: 25px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        li {
+            vertical-align: top;
+        }
+
+        .confidence {
+            height: 300px;
+            width: 910px;
+            background-color: #2F4F4F;
+            text-align: left;
+            align-self: center;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            color: white;
+            list-style-type: none;
+            text-indent: 30px;
+            box-shadow: 2px 2px rgb(204, 204, 204);
+            background-size: 24px;
+        }
+
+        .column {
+            display: inline-block;
+            width: 300px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px rgb(204, 204, 204);
+            background-color: white;
+        }
+
+        .column:nth-child(even) {
+            color: white;
+            background-color: #2F4F4F;           
+        }
+
+        p:nth-child(even) {
+            background-color: rgba(47, 59, 64, 0.35) ;
+            padding-top: 20px;
+            padding-bottom: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .button {
+            background-color: #3A6BA5;
+            color: white;
+            height: 55px;
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: 400;
+            padding-top: 15px;
+            box-shadow: 1px 1px rgb(204, 204, 204);
+            margin: 15px;
+            text-decoration-line: none underline;
+        }
+        
+       img {
+            height: 24px;
+            width: 24px;
+            padding-left: 15px;
+            padding-top: 15px;
+            display: inline;
+        }
+
+        /*cannot get rid of underline */
+        .button:hover, .button:active, .button:link, .button:visited {
+            background-color: #437CBF;
+            text-decoration-line: none underline;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container {
+            text-align: center;
+            background-color: lightgray;
+            width: 910px;
+            margin-left: 10px;
+            box-shadow: 1px 1px rgb(204, 204, 204);
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: lightgray;">
+    <header>Assignment #1 Student Plans</header>
+    <div class="container">
+        <div class="column">
+            <h2>Budget Student</h2>
+            <div class="first">            
+                <h3><span class="price">$10</span>/mo</h3>
+            </div>
+            <div class="dark">
+                <p><span class="list">            
+                    512MB </span>
+                    Student Memory</p>
+                <p><span class="list">            
+                    1TB </span> Patience</p>        
+                <p><span class="list">            
+                    20GB </span> Recall</p>
+                <p><span class="list">            
+                    0 </span> Quiz A Grades</p>
+                </div>
+
+            <div class="button">
+                <a href="page2.html">View Form</a>
+            </div>
+
+
+        </div>
+        <div class="column">
+            <h2>Standard Student</h2>
+            <div class="second">            
+                <h3><span class="price">$25</span>/mo</h3>
+            </div>
+            <div class="dark">
+
+            <p><span class="list">            
+                1GB </span>
+                Student Memory</p>
+            <p><span class="list">            
+                2TB </span> Patience</p>
+            <p><span class="list">            
+                40GB </span> Recall</p>
+            <p><span class="list">            
+                2 </span> Quiz A Grades</p>
+                
+            </div>
+            <div class="button">
+                <a href="page2.html">View Form</a>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Scholarship Student</h2>
+            <div class="third">            
+                <h3><span class="price">$50</span>/mo</h3>
+            </div> 
+            <div class="dark">
+
+            <p><span class="list">            
+                16GB </span>
+                Student Memory</p>
+            <p><span class="list">            
+                6TB </span> Patience</p>
+            <p><span class="list">            
+                80GB </span> Recall</p>
+            <p><span class="list">            
+                3 </span> Quiz A Grades</p>
+                
+            </div>
+            <div class="button">
+                <a href="page2.html">View Form</a>
+            </div>
+        </div>
+        <div class="confidence">
+            <h4 style="font-size: 24px;"> Learn in Confidence</h4>
+           
+            <li style="font-size: 14px;">All of our marking plans come with the same set of award-winning features:</li>
+            <div class="check">            
+                <img src = "./images/checkmark.svg" alt="checkmark"/>
+            </div>
+            <li style="text-indent: 100px;"> Professor anti-grumpiness filter</li>
+
+            <div class="check">            
+                <img src = "./images/checkmark.svg" alt="checkmark"/>
+            </div>
+            <li style="text-indent: 100px"> Promise to not use ChatGPT</li>
+            <div class="check">            
+                <img src = "./images/checkmark.svg" alt="checkmark"/>
+            </div>
+            <li style="text-indent: 100px;"> Complementary copy of <a href="https://www.pearson.com/en-ca/subject-catalog/p/fundamentals-of-web-development/P200000003214/9780136792857"> <i>
+                Fundamentals of Web Development, 3rd Edition </i></a> 
+            </li>
+    </div>
+    <div class="clearfix"></div>
+</body>
+</html>

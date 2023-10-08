@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Advanced Art Work Search</title>
+    <link rel='stylesheet' href="variables-palette-7.css">
+
+    <style>
+        header {
+            text-align: center;
+            font-weight: 500;
+            font-size: 24px;
+            width: 1600px;
+            height: 40px;
+            padding-top: 10px;
+            color: var(--color-primary-1-050);
+            background-color: var(--color-primary-1-800);
+        }
+
+        .row {
+            text-align: left;  
+            display: block;
+            height: 70px;      
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .search_box {
+            margin-top: 10px;
+            width: 1575px;
+            padding-top: 20px;
+            padding-left: 25px;
+            background-color: var(--color-neutral-300);
+            height: 50px;
+        }
+
+        .el {
+            display: inline-block; 
+        }
+
+        .display_box {
+            width: 1600px;
+            height: 600px;
+            background-color: var(--color-neutral-300);
+        }
+
+        .footer {
+            margin-top: 15px;
+            width: 1570px;
+            height: 25px;
+            padding: 15px;
+            background-color: var(--color-neutral-300);
+        }
+
+        h1 {
+            background-color: var(--color-primary-1-800);
+            color: var(--color-primary-1-050);
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 25px;
+            margin-right: 25px;
+            height: 45px;
+        }
+
+        .disc {
+            background-color: var(--color-primary-1-100);
+            font-size: 14px;
+            font-weight: 300;
+            margin-left: 25px;
+            margin-right: 25px; 
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .port {
+            width: 70px;
+            height: 70px; 
+            padding-left: 30px;
+            display: inline-block;
+        }
+
+        .actions {
+            float:right;
+            padding-right: 25px;
+            vertical-align: middle;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+            margin-left: 20px;
+            display: inline;
+        }
+
+        input[type="search"] {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+            left: 20px;
+        }
+
+        li {
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        * {
+            font-family: sans-serif;
+            vertical-align: middle;
+        }
+
+        #index {
+            display: inline;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>Advanced Art Work Search</header>
+
+    <form action="http://www.randyconnolly.com/tests/process.php" method="post">
+        <div class="search_box"> 
+            <label for="search"></label>
+            <input type="text" id="search" name="search" placeholder="Portrait">
+
+            <label for="History">Subject:</label>
+            <input type="radio" id="History" name="subject" value="History">
+            <label for="Person">History</label>
+            <input type="radio" id="subject" name="subject" value="Person">
+            <label for="Landscape">Person</label>
+            <input type="radio" id="subject" name="subject" value="Landscape">
+            
+            <label for="filter">Landscape</label>
+                <select name="filter" id="filter">
+                    <option value="0">Neo-Classicim</option>
+                    <option value="1">Baroque</option>
+                    <option value="2">Renaissance</option>
+                    <option value="3">Realism</option>
+                </select>
+        </div>
+
+        <div class="display_box">
+            <h1>
+                Paintings
+            </h1>
+            <div class="disc">
+                <li style="text-indent: 190px;">Title</li>
+                <li style="text-indent: 250px;">Artist</li>
+                <li style="text-indent: 180px;">Year</li>
+                <li style="text-indent: 250px;">Genre</li>
+                <li style="text-indent: 230px;">Actions</li>
+            </div>
+        
+                <div class="row">
+                    <input type="checkbox" name="index[0]" id="index" value="0">   
+                <img src="./images/125010.jpg" alt="Portrait of ..." class="port">
+                <ul>
+                    <li>Portrait of Alida Christina Assink</li>
+                    <li style="text-indent: 100px;">Kruseman, Jan</li>
+                    <li style="text-indent: 120px;">1833</li>
+                    <li style="text-indent: 250px;">Realism</li>
+                </ul>
+                <div class="actions">
+                    <button type="button">
+                    <img src="./images/edit.png" alt="edit">
+                    </button>
+                    <button type="button">
+                        <img src="./images/archive.png" alt="archive">
+                    </button>
+                    <button type="button">
+                        <img src="./images/delete.png" alt="delete">
+                    </button>
+                    <button type="button">
+                        <img src="./images/collection.png" alt="collection">
+                    </button>
+                </div>
+                </div>
+        
+                <div class="row">
+                    <input type="checkbox" name="index[1]" id="index" value="1">   
+               <img src="./images/125020.jpg" alt="Portrait of ..." class="port">
+               <ul>
+                    <li>Portrait of William II, King of the Netherlands</li>
+                    <li style="text-indent: 30px;">Kruseman, Jan</li>
+                    <li style="text-indent: 115px;">1839</li>
+                    <li style="text-indent: 250px;">Realism</li>
+                </ul>
+                <div class="actions">
+                    <button type="button">
+                    <img src="./images/edit.png" alt="edit">
+                    </button>
+                    <button type="button">
+                        <img src="./images/archive.png" alt="archive">
+                    </button>
+                    <button type="button">
+                        <img src="./images/delete.png" alt="delete">
+                    </button>
+                    <button type="button">
+                        <img src="./images/collection.png" alt="collection">
+                    </button>
+                </div>
+                </div>
+        
+                <div class="row">
+                    <input type="checkbox" name="index[2]" id="index" value="2">   
+                <img src="./images/127010.jpg" alt="Portrait of ..." class="port">
+                <ul>
+                        <li>Windmill at Wijk bjj Duurstede </li>
+                        <li style="text-indent: 120px;">Ruisdael, Jacob van</li>
+                        <li style="text-indent: 80px;">1670</li>
+                        <li style="text-indent: 250px;">Dutch Golden Age</li>
+                    </ul>
+                    <div class="actions">
+                    <button type="button">
+                    <img src="./images/edit.png" alt="edit">
+                    </button>
+                    <button type="button">
+                        <img src="./images/archive.png" alt="archive">
+                    </button>
+                    <button type="button">
+                        <img src="./images/delete.png" alt="delete">
+                    </button>
+                    <button type="button">
+                        <img src="./images/collection.png" alt="collection">
+                    </button>
+                </div>
+            </div>
+                        
+                <div class="row">
+                    <input type="checkbox" name="index[3]" id="index" value="3">   
+                <img src="./images/128010.jpg" alt="Portrait of ..." class="port">
+                <ul>
+                    <li>Morning Ride along the Beach</li>
+                    <li style="text-indent: 120px;">Mauve, Anton</li>
+                    <li style="text-indent: 120px;">1876</li>
+                    <li style="text-indent: 250px;">Realism</li>
+                </ul>
+                <div class="actions">
+                    <button type="button">
+                    <img src="./images/edit.png" alt="edit">
+                    </button>
+                    <button type="button">
+                    <img src="./images/archive.png" alt="archive">
+                    </button>
+                    <button type="button">
+                    <img src="./images/delete.png" alt="delete">
+                    </button>
+                    <button type="button">
+                    <img src="./images/collection.png" alt="collection">
+                    </button>
+                </div>
+            </div>
+        
+            <div class="row">
+                <input type="checkbox" name="index[4]" id="index" value="4">   
+            <img src="./images/130020.jpg" alt="Portrait of ..." class="port">
+            <ul>
+                <li>Three Girls from the Amsterdam Orphanage</li>
+                <li style="text-indent: 35px;">Schwartze, Therese</li>
+                <li style="text-indent: 80px;">1885</li>
+                <li style="text-indent: 250px;">Realism</li>
+            </ul>
+                <div class="actions">
+                        <button type="button">
+                            <img src="./images/edit.png" alt="edit">
+                            </button>
+                            <button type="button">
+                                <img src="./images/archive.png" alt="archive">
+                            </button>
+                            <button type="button">
+                                <img src="./images/delete.png" alt="delete">
+                            </button>
+                            <button type="button">
+                                <img src="./images/collection.png" alt="collection">
+                            </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <label for="actions"></label>
+                <select name="actions" id="actions">
+                    <option value="0">Edit</option>
+                    <option value="1">Archive</option>
+                    <option value="2">Delete</option>
+                    <option value="3">Collection</option>
+                </select>
+                <input type="submit" value="Apply to all">
+            </form> 
+        </div>
+</body>
+</html>
